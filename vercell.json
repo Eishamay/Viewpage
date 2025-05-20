@@ -1,0 +1,18 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Content-Type", "value": "application/vnd.apple.mpegurl" }
+      ]
+    },
+    {
+      "source": "/.*\\.ts",
+      "headers": [
+        { "key": "Content-Type", "value": "video/mp2t" }
+      ]
+    }
+  ]
+}
