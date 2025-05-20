@@ -1,23 +1,12 @@
 {
-  "cleanUrls": true,
   "headers": [
     {
-      "source": "/output.m3u8",
+      "source": "/video/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Content-Type", "value": "application/vnd.apple.mpegurl" }
-      ]
-    },
-    {
-      "source": "/output0.ts",
-      "headers": [
-        { "key": "Content-Type", "value": "video/mp2t" }
-      ]
-    },
-    {
-      "source": "/output1.ts",
-      "headers": [
-        { "key": "Content-Type", "value": "video/mp2t" }
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
       ]
     }
   ]
